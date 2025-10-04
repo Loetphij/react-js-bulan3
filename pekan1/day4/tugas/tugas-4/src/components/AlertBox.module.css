@@ -1,0 +1,19 @@
+.alert {
+    padding: 15px;
+    border-radius: 8px;
+    margin: 8px 0;
+    font-weight: 600;
+    color: white;
+}
+
+.success {
+    background-color: #148912;
+}
+
+.warning {
+    background-color: #ddbf19;
+}
+
+.error {
+    background-color: #ff1900;
+}

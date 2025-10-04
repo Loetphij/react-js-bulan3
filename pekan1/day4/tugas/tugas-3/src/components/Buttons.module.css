@@ -1,0 +1,40 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 50px;
+    align-items: center;
+}
+
+.button {
+    width: 150px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2, transform 0.25s;
+}
+
+.login {
+    background-color: #113e6c;
+    color: #fff;
+}
+
+.login:hover {
+    background-color: #092e54;
+    transform: translateY(2px);
+}
+
+.register {
+    background-color: #3a9a0e;
+    color: #fff;
+}
+
+.register:hover {
+    background-color: #276d07;
+    transform: translateY(2px);
+}
