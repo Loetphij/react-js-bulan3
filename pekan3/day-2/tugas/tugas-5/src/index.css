@@ -1,0 +1,117 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+/* Warna dasar app */
+.app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Atur variabel warna tergantung tema */
+.app.light {
+  --bg: #f3f4f6;
+  --text: #111827;
+  --card-bg: #ffffff;
+  --border: #d1d5db;
+  --input-bg: #ffffff;
+  --button-bg: #2563eb;
+  --button-text: #ffffff;
+  --shadow: rgba(0, 0, 0, 0.1);
+}
+
+.app.dark {
+  --bg: #0f172a;
+  --text: #e5e7eb;
+  --card-bg: #1e293b;
+  --border: #475569;
+  --input-bg: #0f172a;
+  --button-bg: #3b82f6;
+  --button-text: #ffffff;
+  --shadow: rgba(0, 0, 0, 0.4);
+}
+
+/* Container utama */
+.container {
+  width: 90%;
+  max-width: 400px;
+  background: var(--card-bg);
+  border-radius: 10px;
+  box-shadow: 0 8px 20px var(--shadow);
+  padding: 20px;
+  transition: background 0.3s ease;
+}
+
+/* Judul */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Card section */
+.card,
+.card-info {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 15px;
+}
+
+/* Label & Input */
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--input-bg);
+  color: var(--text);
+  transition: border-color 0.2s;
+}
+
+input:focus {
+  border-color: var(--button-bg);
+  outline: none;
+}
+
+/* Tombol */
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  font-weight: 600;
+  cursor: pointer;
+  transition: filter 0.2s;
+}
+
+button:hover {
+  filter: brightness(1.1);
+}
+
+/* Card info */
+.card-info p {
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+.card-info p:last-child {
+  font-size: 12px;
+  opacity: 0.7;
+}
