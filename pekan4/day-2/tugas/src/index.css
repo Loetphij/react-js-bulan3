@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #3b82f6;
+  --spacing-18: 4.5rem;
+}
+
+html {
+  transition: background-color 0.7s ease, color 0.7s ease;
+}
