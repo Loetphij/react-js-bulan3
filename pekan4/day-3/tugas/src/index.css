@@ -1,0 +1,164 @@
+/* 🌑 Global Dark Theme */
+body {
+  background-color: #242424;
+  color: #f0f0f0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+/* 🧱 Container utama counter */
+.counter-container {
+  background: #2f2f2f;
+  border: 2px solid #3d3d3d;
+  border-radius: 16px;
+  padding: 30px;
+  margin-top: 80px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  width: 320px;
+  transition: all 0.2s ease-in-out;
+}
+
+.counter-container:hover {
+  transform: scale(1.02);
+}
+
+/* 🔢 Teks counter */
+.counter-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #00c2ff;
+}
+
+.counter-value {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin: 10px 0 20px;
+  color: #ffffff;
+}
+
+/* 🎛️ Tombol */
+.counter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+button {
+  background: #3b3b3b;
+  border: 1px solid #555;
+  color: #f0f0f0;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.15s ease;
+}
+
+button:hover {
+  background: #00c2ff;
+  color: #1a1a1a;
+  border-color: #00c2ff;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+.card-container {
+  background: #2f2f2f;
+  border: 2px solid #3d3d3d;
+  border-radius: 16px;
+  padding: 25px;
+  margin: 30px auto;
+  width: 350px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  color: #f0f0f0;
+  text-align: left;
+}
+
+.card-title {
+  color: #00c2ff;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+/* 📋 Daftar */
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list-item {
+  background: #3a3a3a;
+  border: 1px solid #4a4a4a;
+  padding: 10px 14px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  transition: all 0.2s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list-item:hover {
+  background: #444;
+}
+
+.list-sub {
+  font-size: 0.9rem;
+  color: #bbb;
+}
+
+.todo-input {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+input {
+  flex: 1;
+  padding: 8px 10px;
+  margin-right: 10px;
+  border-radius: 8px;
+  border: 1px solid #555;
+  background: #1f1f1f;
+  color: #fff;
+}
+
+input:focus {
+  outline: 1px solid #00c2ff;
+}
+
+.delete-btn {
+  background: #ff5555 !important;
+  color: #fff !important;
+  border: none !important;
+  padding: 4px 8px !important;
+  border-radius: 8px !important;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.delete-btn:hover {
+  background: #ff7777 !important;
+}
+
+.todo-item.completed span {
+  text-decoration: line-through;
+  color: #999;
+}
